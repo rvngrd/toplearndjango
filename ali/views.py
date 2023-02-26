@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseNotFound
 
 # Create your views here.
 
@@ -14,4 +14,8 @@ def index(request):
 
 
 def dynamic(request, id):
-    return HttpResponse(f'{id} and {a.get(id)}')
+    m = a.get(id)
+    if m is not None:
+        return HttpResponse(f'{id} and {a.get(id)}')
+    
+    return HttpResponseNotFound("NOT FOUND")
