@@ -9,4 +9,4 @@ def index(request):
 
 
 def dynamic(request, id):
-    return HttpResponse(':D')
+    return HttpResponse(id)
