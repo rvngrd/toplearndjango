@@ -4,5 +4,6 @@ from . import views
 app_name = 'ali'
 
 urlpatterns = [
-    path('sunday', views.index)
+    path('sunday', views.index),
+    path('<id>', views.dynamic)
 ]

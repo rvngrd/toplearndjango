@@ -20,5 +20,5 @@ from ali import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('salam/', views.index),
-    path('a/', include('ali.urls'))
+    path('days/', include('ali.urls')),
 ]

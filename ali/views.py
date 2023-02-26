@@ -6,3 +6,7 @@ from django.http import HttpResponse
 
 def index(request):
     return HttpResponse("salam")
+
+
+def dynamic(request, id):
+    return HttpResponse(':D')
