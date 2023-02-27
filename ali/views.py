@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
+from django.urls import reverse
 
 # Create your views here.
 
@@ -21,4 +22,5 @@ def dynamic(request, id):
     return HttpResponseNotFound("NOT FOUND")
 
 def test_redirect(request):
-    return HttpResponseRedirect('/days/sunday')
+    # return HttpResponseRedirect('/days/sunday')
+    return HttpResponseRedirect(reverse('ali:iman'))    #if we set app_name in urls, we have to add it in reverse
