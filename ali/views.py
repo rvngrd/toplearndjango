@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse, HttpResponseNotFound
+from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
 
 # Create your views here.
 
@@ -19,3 +19,6 @@ def dynamic(request, id):
         return HttpResponse(f'{id} and {a.get(id)}')
     
     return HttpResponseNotFound("NOT FOUND")
+
+def test_redirect(request):
+    return HttpResponseRedirect('/days/sunday')

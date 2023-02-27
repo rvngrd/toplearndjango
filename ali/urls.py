@@ -5,5 +5,6 @@ app_name = 'ali'
 
 urlpatterns = [
     path('sunday', views.index),
-    path('<id>', views.dynamic)
+    path('int:<id>', views.dynamic),
+    path('monday', views.test_redirect)
 ]
