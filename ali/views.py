@@ -15,11 +15,10 @@ def index(request):
 
 
 def dynamic(request, id):
-    m = a.get(id)
+    m = a.get(str(id))
     if m is not None:
         return HttpResponse(f'{id} and {a.get(id)}')
-    
-    return HttpResponseNotFound("NOT FOUND")
+    return HttpResponseNotFound("<h1> NOT FOUND </h1>")
 
 def test_redirect(request):
     # return HttpResponseRedirect('/days/sunday')
