@@ -10,6 +10,17 @@ a = {
 }
 
 
+def link(request):
+    html = """
+        <ul>
+            <li>
+                <a href="monday"> go to sunday </a>
+            </li>
+        </ul>
+    """
+    return HttpResponse(html)
+
+
 def index(request):
     return HttpResponse("salam")
 
