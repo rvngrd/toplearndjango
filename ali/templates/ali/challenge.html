@@ -12,5 +12,13 @@
         {{ data }}  </br>
         {{ text|title }}
     </h1>
+    <h2>
+        <ul>
+            {% for i in data%}
+                <li>{{ i }}</li>
+            {% endfor %}
+        </ul>
+    </h2>
+
 </body>
 </html>
