@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
 from django.urls import reverse
+from django.template.loader import render_to_string
 
 # Create your views here.
 
@@ -18,8 +19,8 @@ def link(request):
             </li>
         </ul>
     """
-    return HttpResponse(html)
-
+    m = render_to_string('ali/challenge.html')
+    return HttpResponse(m)
 
 def index(request):
     return HttpResponse("salam")
