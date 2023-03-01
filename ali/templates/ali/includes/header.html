@@ -1,5 +1,7 @@
 <header>
     <nav>
-        <a href="{% url 'ali:iman' %}"> lets go to sunday </a>
+        <a href="{% url 'ali:iman' %}"> lets go to sunday </a> |
+        <a href="{% url 'ali:iman' %}"> lets go to {{ omid }}</a>
     </nav>
 </header>
+<!-- it has access to context too -->
