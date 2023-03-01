@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Testing</title>
 </head>
 <body>
     <h1>
@@ -20,6 +20,12 @@
         </ul>
     </br> <a href="{% url 'ali:dynamic' 1 %}"> click here! </a>
     </h2>
-
+    <p>
+        {% if data is None %}
+            سلام بر تو عزیز
+        {% else %}
+            درود بر تو عزیز
+        {% endif %}
+    </p>
 </body>
 </html>
