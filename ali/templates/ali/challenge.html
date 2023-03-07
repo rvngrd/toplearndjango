@@ -1,7 +1,12 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block page_title %}
 Testing
+{% endblock %}
+
+{% block header_refrences %}
+<link rel="stylesheet" href="{% static "ali/c.css" %}">
 {% endblock %}
 
 {% block content %}
