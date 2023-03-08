@@ -6,3 +6,32 @@ html {
 body {
     margin: 0;
 }
+
+/* This is a single-line comment */
+
+.center {
+    text-align: center;
+    color: red;
+}
+
+/* This is
+a multi-line
+comment / using id */
+
+#aha {
+    background-color: lightblue;
+}
+
+/* using rgba */
+#transparent {
+    background-color: rgba(234, 34, 4, 0.5);
+}
+/* using hex colors */
+#hex {
+    color: #3c3c3c;
+}
+/* using hsl colors */
+#hex {
+    color: hsl(300, 76%, 72%);
+}
+
