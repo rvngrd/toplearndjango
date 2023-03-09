@@ -3,8 +3,10 @@
 html {
     font-family: 'Shantell Sans', cursive;
 }
+
 body {
     margin: 0;
+    background-color: rgb(175, 255, 121);
 }
 
 /* This is a single-line comment */
@@ -31,7 +33,7 @@ comment / using id */
     color: #3c3c3c;
 }
 /* using hsl colors */
-#hex {
+#hsl {
     color: hsl(300, 76%, 72%);
 }
 

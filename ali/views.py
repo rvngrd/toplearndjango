@@ -21,7 +21,7 @@ def link(request):
     """
     # m = render_to_string('ali/challenge.html')
     # return HttpResponse(m)
-    data = [1,2,3]
+    data = [1,2,3, 'testing']
     text = 'this is a test'
     context = {
         'data': data,
